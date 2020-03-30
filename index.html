@@ -68,7 +68,7 @@ let player = button;
 }
 
 const buttons = document.querySelectorAll('.buttons');
-buttons.forEach( button => button.addEventListener ('click'));
+buttons.forEach( button => button.addEventListener ('click', gameRound));
 
 window.addEventListener('click', gameRound); 
 </script>
