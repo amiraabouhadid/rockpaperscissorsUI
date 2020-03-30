@@ -1,0 +1,75 @@
+<! DOCTYPE html>
+
+
+<head>
+<title>Rock Paper Scissors Game</title>
+<link rel ="stylesheet" href = "style.css">
+</head>
+
+
+
+<body>
+<div id= "buttonsContainer">
+	<button class= "button" id= "rockButton">Rock</button>
+	<button class= "button" id="paperButton">Paper</button>
+	<button class= "button" id="scissorsButton">Scissors</button>
+</div>
+    
+<script>
+function computerPlay(){
+  let possibleChoices = ["paper" ,"scissors", "rock"];
+  let compselect = possibleChoices[Math.floor(Math.random() * possibleChoices.length)];
+  return compselect;
+}
+
+function playRound(player, computer) {
+  
+ 	if (player === "rock" && computer === "paper"){
+ 	    return "Paper beats rock, computer Wins";
+ 	}
+ 	
+  else if (player === "rock" && computer === "scissors"){
+ 	     return "rock beats scissor, player wins";
+ 	}
+ 	
+  else if (player === "paper" && computer === "rock" ){
+      return "paper beats rock, player wins";
+    }
+  
+  else if (player === "paper"&& computer === "scissors"){
+      return "scissors beats paper, computer wins";
+    }
+  
+  else if (player === "scissors" && computer === "paper" ){
+      return "scissors beats paper, player wins"; 
+    } 
+  
+  else if (player === "scissors" && computer === "rock"){
+      return "rock beats scissors, computer wins"; 
+    } 
+
+  
+  else if (player === computer) {
+    return "draw";
+  }
+}
+
+
+function gameRound(e){
+    
+const playerSelection = document.querySelector(`button[id="${e.button}"]`);
+const computerSelection = computerPlay();
+let player= playerSelection.toLowerCase();
+let computer = computerSelection.toLowerCase(); 
+ 
+  console.log(player);
+  console.log (computer);
+  let result= playRound(player, computer);
+  console.log(result); 
+}
+
+window.addEventListener('click', gameRound); 
+</script>
+</body>	
+
+
