@@ -9,10 +9,10 @@
 
 
 <body>
-<div id= "buttonsContainer">
-	<button class= "button" id= "rockButton">Rock</button>
-	<button class= "button" id="paperButton">Paper</button>
-	<button class= "button" id="scissorsButton">Scissors</button>
+<div class= "buttons">
+	<button class= "button" id="rock">Rock</button>
+	<button class= "button" id="paper">Paper</button>
+	<button class= "button" id="scissors">Scissors</button>
 </div>
     
 <script>
@@ -57,14 +57,18 @@ function playRound(player, computer) {
 
 function gameRound(e){
     
-const player= String(document.querySelector(".button"));
+const button = document.querySelector('.button'); 
 const computer = computerPlay(); 
+let player = button; 
  
-  console.log(player);
+  console.log (player); 
   console.log (computer);
   let result= playRound(player, computer);
   console.log(result); 
 }
+
+const buttons = document.querySelectorAll('.buttons');
+buttons.forEach( button => button.addEventListener ('click');
 
 window.addEventListener('click', gameRound); 
 </script>
