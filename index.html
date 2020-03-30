@@ -57,10 +57,8 @@ function playRound(player, computer) {
 
 function gameRound(e){
     
-const playerSelection = document.querySelector(`button[id="${e.button}"]`);
-const computerSelection = computerPlay();
-let player= playerSelection.toLowerCase();
-let computer = computerSelection.toLowerCase(); 
+const player= document.querySelector(`button[id="${e.button}"]`);
+const computer = computerPlay(); 
  
   console.log(player);
   console.log (computer);
