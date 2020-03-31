@@ -65,7 +65,8 @@ function playRound(player, computer) {
 function gameRound(e){
  while(playerScore< 5 && computerScore<5){    
 
-const button = document.querySelector('this.button').textContent; 
+this.classList.add('pressed');
+const button = document.querySelector('.button').textContent; 
 const computer = computerPlay(); 
 let player = button; 
  
@@ -73,17 +74,18 @@ let player = button;
   console.log (computer);
   let result= playRound(player, computer);
   console.log(result);
-
+this.classList.remove('pressed');
 
  }	
 }
 playerScore=0;
 computerScore =0;
 
+
 const buttons = document.querySelectorAll('.buttons');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
 
- 
+
 </script>
 </body>	
 

@@ -14,3 +14,7 @@
 	background-color: red; 
 	color: white;
 }
+.pressed{
+	background-color:black;
+	transition: 0.09s;
+}
