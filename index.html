@@ -79,16 +79,8 @@ const player = String(e.srcElement.innerHTML);
   let result= playRound(player, computer); 
  console.log(result);
 //this.classList.remove('pressed');
-
-	
-}
-
-function Rounds (e){
-	if (playerScore === 5 || computerScore === 5){
-	return "Game Over,play again?";
-	location.reload();}
-	else {gameRound};
-
+if (playerScore === 5 || computerScore ===5){
+	return "game over";}
 }
 
 let playerScore=0;
@@ -96,7 +88,7 @@ let computerScore =0;
 
 
 const buttons = document.querySelectorAll('.button');
-buttons.forEach( button => button.addEventListener ('click', Rounds));
+buttons.forEach( button => button.addEventListener ('click', gameRound));
 
 </script>
 </body>	
