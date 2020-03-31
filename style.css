@@ -35,10 +35,18 @@ title{
 }
 .container {
 	display: block;
+	position: relative; 
+	bottom: 450px;
+	left: 40px;
+	right: 40px;
 	margin: 10px 50px 200px 50px;
 	align-items: center;  
 }
 .content{
+	position: relative; 
+	bottom: 100px;
+	left: 20px;
+	right:20px;
 	transition: all 0.1s;
 	display: block;	
 	width: 700px;
