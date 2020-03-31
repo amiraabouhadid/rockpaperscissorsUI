@@ -84,11 +84,11 @@ const player = String(e.srcElement.innerHTML);
 }
 
 function Rounds (e){
-while (playerScore <5 && computerScore <5){
-	gameRound(e); 
 	if (playerScore === 5 || computerScore === 5){
-	return "Game Over";}
-}
+	return "Game Over,play again?";
+	location.reload();}
+	else {gameRound};
+
 }
 
 let playerScore=0;
