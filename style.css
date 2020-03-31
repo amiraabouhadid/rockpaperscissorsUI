@@ -16,5 +16,5 @@
 }
 .pressed{
 	background-color:black;
-	transition: 0.09s;
+	transition:all 0.09s;
 }
