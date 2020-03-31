@@ -37,6 +37,7 @@ head{
 	align-items: center;  
 }
 .content{
+	transition: all 0.1s;
 	display: block;	
 	width: 700px;
 	font-size: 40px;
