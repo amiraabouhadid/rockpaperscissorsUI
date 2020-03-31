@@ -25,38 +25,38 @@ function computerPlay(){
 function playRound(player, computer) {
   
  	if (player === "rock" && computer === "paper"){
-	return	computerScore +=1;
- 	    return "Paper beats rock, computer Wins";
+	computerScore += 1 ;
+ 	    return "Paper beats rock, computer Wins, computerScore is " + computerScore + " ,playerScore is " +playerScore;
  	}
  	
   else if (player === "rock" && computer === "scissors"){
-	return	playerScore +=1;
- 	     return "rock beats scissor, player wins";
+	playerScore +=1;
+	return "rock beats scissors, player Wins, computerScore is " + computerScore + " ,playerScore is " +playerScore;
  	}
  	
   else if (player === "paper" && computer === "rock" ){
-	return playerScore +=1;
-      return "paper beats rock, player wins";
+	playerScore +=1;
+      return "paper beats rock, player wins computerScore is " + computerScore + " ,playerScore is " +playerScore;
     }
   
   else if (player === "paper"&& computer === "scissors"){
-	return computerScore +=1;
-      return "scissors beats paper, computer wins";
+	 computerScore +=1;
+      return "scissors beats paper, computer wins computerScore is " + computerScore + " ,playerScore is " +playerScore;
     }
   
   else if (player === "scissors" && computer === "paper" ){
-	return playerScore +=1;
-      return "scissors beats paper, player wins"; 
+	playerScore +=1;
+      return "scissors beats paper, player wins computerScore is " + computerScore + " ,playerScore is " +playerScore; 
     } 
   
   else if (player === "scissors" && computer === "rock"){
-	return computerScore +=1;
-      return "rock beats scissors, computer wins"; 
+	 computerScore +=1;
+      return "rock beats scissors, computer wins computerScore is " + computerScore + " ,playerScore is " +playerScore; 
     } 
 
   
   else if (player === computer) {
-    return "draw";
+    return "draw computerScore is " + computerScore + " ,playerScore is " +playerScore;
   }
 }
 
