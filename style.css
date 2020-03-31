@@ -9,7 +9,7 @@ body{
 	padding: 0; 
 }
 
-title{
+.title{
 	text-align: center;
 	color: red;
 	font-size:200px;
@@ -39,7 +39,7 @@ title{
 	display: block;
 	position: relative; 
 	bottom: 450px;
-	left: 700px;
+	left: 900px;
 	right: 40px;
 	margin: 10px 50px 200px 50px;
 	align-items: center;  
