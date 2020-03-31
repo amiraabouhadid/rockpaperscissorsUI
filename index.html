@@ -64,8 +64,7 @@ function playRound(player, computer) {
 
 function gameRound(e){
 
-console.log(e.srcElement.innerHTML);
- while(playerScore< 5 && computerScore<5){    
+    
 
 //this.classList.add('pressed');
 
@@ -78,8 +77,16 @@ const player = String(e.srcElement.innerHTML);
   console.log(result);
 //this.classList.remove('pressed');
 
- }	
+	
 }
+
+function Rounds (e){
+while (playerScore <5 && computerScore <5){
+	gameRound(e)
+
+}
+}
+
 playerScore=0;
 computerScore =0;
 
