@@ -11,7 +11,9 @@ body{
 
 title{
 	text-align: center;
-	color: red; 
+	color: red;
+	font-size:200px;
+	width: 1000px; 
 	margin: 10px 10px 10px 10px; 
 	padding: 10px 10px 10px 10px;
 }
@@ -37,7 +39,7 @@ title{
 	display: block;
 	position: relative; 
 	bottom: 450px;
-	left: 40px;
+	left: 700px;
 	right: 40px;
 	margin: 10px 50px 200px 50px;
 	align-items: center;  
