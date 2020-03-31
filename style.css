@@ -12,6 +12,9 @@ body{
 .title{
 	text-align: center;
 	color: red;
+	position: relative; 
+	align-items: center;
+	top: 300px;
 	font-size:200px;
 	width: 1000px; 
 	margin: 10px 10px 10px 10px; 
