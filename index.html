@@ -63,6 +63,7 @@ function playRound(player, computer) {
 
 
 function gameRound(e){
+console.log(e);
  while(playerScore< 5 && computerScore<5){    
 
 this.classList.add('pressed');
@@ -84,7 +85,7 @@ computerScore =0;
 
 const buttons = document.querySelectorAll('.buttons');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
-console.log(e);
+
 
 </script>
 </body>	
