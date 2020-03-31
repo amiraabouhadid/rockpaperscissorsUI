@@ -82,15 +82,21 @@ const player = String(e.srcElement.innerHTML);
   console.log (computer);
   let result= playRound(player, computer); 
  console.log(result);
+}
 
+function resultsDisplay(){
 //displaying results
+
 const container = document.querySelector('.container');
 
 const content = document.createElement('div');
-content.classList.add('content');
+
+content.classList.remove('content');
 content.textContent=result;
-container.appendChild(content); 
-}
+content.classList.add('content');
+container.appendChild(content);
+} 
+
 
 
 let playerScore=0;
