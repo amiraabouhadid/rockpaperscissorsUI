@@ -63,14 +63,15 @@ function playRound(player, computer) {
 
 
 function gameRound(e){
-console.log(e);
+
 console.log(e.srcElement.innerHTML);
  while(playerScore< 5 && computerScore<5){    
 
 this.classList.add('pressed');
-const button = document.querySelector('.button').textContent; 
+
 const computer = computerPlay(); 
-let player = button; 
+
+let player = e.srcElementinnerHTML; 
  
   console.log (player); 
   console.log (computer);
