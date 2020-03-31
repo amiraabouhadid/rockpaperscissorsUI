@@ -28,37 +28,58 @@ function playRound(player, computer) {
   
  	if (player === "rock" && computer === "paper"){
 	computerScore += 1 ;
- 	    return "Paper beats rock, computer Wins, computerScore is " + computerScore + " ,playerScore is " +playerScore;
+ 	    return {"Paper beats rock, computer wins",
+			computerScore, playerScore,
+		 "computerScore is " + computerScore + ", playerScore is " +playerScore
+		};
  	}
  	
   else if (player === "rock" && computer === "scissors"){
 	playerScore +=1;
-	return "rock beats scissors, player Wins, computerScore is " + computerScore + " ,playerScore is " +playerScore;
+	return {"rock beats scissors, player wins",
+		computerScore, playerScore,
+	 	"computerScore is " + computerScore + " ,playerScore is " +playerScore
+		};
  	}
  	
   else if (player === "paper" && computer === "rock" ){
 	playerScore +=1;
-      return "paper beats rock, player wins computerScore is " + computerScore + " ,playerScore is " +playerScore;
+      return {"paper beats rock, player wins",
+	computerScore, playerScore,
+	"computerScore is " + computerScore + " ,playerScore is " +playerScore
+		};
     }
   
   else if (player === "paper"&& computer === "scissors"){
 	 computerScore +=1;
-      return "scissors beats paper, computer wins computerScore is " + computerScore + " ,playerScore is " +playerScore;
+      return {"scissors beats paper, computer wins",
+		computerScore, playerScore,
+		" computerScore is " + computerScore + " ,playerScore is " +playerScore
+		};
     }
   
   else if (player === "scissors" && computer === "paper" ){
 	playerScore +=1;
-      return "scissors beats paper, player wins computerScore is " + computerScore + " ,playerScore is " +playerScore; 
+      return {"scissors beats paper, player wins",
+		computerScore, playerScore, 
+		" computerScore is " + computerScore + " ,playerScore is " +playerScore
+		}; 
     } 
   
   else if (player === "scissors" && computer === "rock"){
 	 computerScore +=1;
-      return "rock beats scissors, computer wins computerScore is " + computerScore + " ,playerScore is " +playerScore; 
+      return {"rock beats scissors, computer wins",
+		computerScore, playerScore, 
+		" computerScore is " + computerScore + " ,playerScore is " +playerScore
+		}; 
     } 
 
   
   else if (player === computer) {
-    return "draw computerScore is " + computerScore + " ,playerScore is " +playerScore;
+    return {"draw",
+	computerScore, playerScore,
+	"computerScore is " + computerScore + " ,playerScore is " +playerScore
+		};
   }
 }
 
@@ -85,7 +106,8 @@ const player = String(e.srcElement.innerHTML);
 function Rounds (e){
 while (playerScore <5 && computerScore <5){
 	gameRound(e); 
-
+	if (playerScore === 5 || computerScore === 5){
+	return "Game Over";}
 }
 }
 
