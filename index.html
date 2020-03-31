@@ -85,7 +85,7 @@ const player = String(e.srcElement.innerHTML);
 
 function gameOver(e){
 if (playerScore === 5 || computerScore === 5){
-	return button.removeEventListener('click', gameRound);
+	return "Game Over"; 
 }
 }
 
@@ -95,7 +95,7 @@ let computerScore =0;
 
 const buttons = document.querySelectorAll('.button');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
-gameOver();
+buttons.forEach(button => button.removeEventListener ('click', gameOver));
 </script>
 </body>	
 
