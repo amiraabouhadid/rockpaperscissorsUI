@@ -61,6 +61,7 @@ function playRound(player, computer) {
   else if (player === computer) {
     return "draw. computerScore is " + computerScore + " ,playerScore is " +playerScore;
   }
+
 }
 
 
@@ -79,8 +80,13 @@ const player = String(e.srcElement.innerHTML);
   let result= playRound(player, computer); 
  console.log(result);
 //this.classList.remove('pressed');
-if (playerScore === 5 || computerScore ===5){
-	return "game over";}
+
+}
+
+function gameOver(e){
+if (playerScore === 5 || computerScore === 5){
+	return button.removeEventListener('click', gameRound);
+}
 }
 
 let playerScore=0;
@@ -89,7 +95,7 @@ let computerScore =0;
 
 const buttons = document.querySelectorAll('.button');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
-
+gameOver();
 </script>
 </body>	
 
