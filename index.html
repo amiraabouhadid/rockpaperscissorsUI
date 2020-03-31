@@ -68,9 +68,8 @@ function playRound(player, computer) {
 
 function gameRound(e){
 
-    
-
-//this.classList.add('pressed');
+if(playerScore === 5 || computerScore === 5){
+	return location.reload();}    
 
 const computer = computerPlay(); 
 
@@ -79,9 +78,6 @@ const player = String(e.srcElement.innerHTML);
   console.log (computer);
   let result= playRound(player, computer); 
  console.log(result);
-//this.classList.remove('pressed');
-if (playerScore === 5 || computerScore === 5){
-	return location.reload();}
 }
 
 
