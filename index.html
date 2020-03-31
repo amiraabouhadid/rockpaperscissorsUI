@@ -71,8 +71,8 @@ this.classList.add('pressed');
 
 const computer = computerPlay(); 
 
-let player = e.srcElementinnerHTML; 
- 
+const button = querySelector(`button[${e.srcElementinnerHTML}]`); 
+const player =button;
   console.log (player); 
   console.log (computer);
   let result= playRound(player, computer);
