@@ -16,6 +16,8 @@
 </div>
     
 <script>
+use 'strict'  
+
 function computerPlay(){
   let possibleChoices = ["paper" ,"scissors", "rock"];
   let compselect = possibleChoices[Math.floor(Math.random() * possibleChoices.length)];
@@ -82,7 +84,7 @@ const player = String(e.srcElement.innerHTML);
 
 function Rounds (e){
 while (playerScore <5 && computerScore <5){
-	gameRound(e)
+	gameRound(e); 
 
 }
 }
