@@ -83,15 +83,15 @@ const player = String(e.srcElement.innerHTML);
   let result= playRound(player, computer); 
  console.log(result);
 resultsDisplay;
-}
-function resultsDisplay(e){
+
 //displaying results
 
 const container = document.querySelector('.container');
 
 const content = document.createElement('div');
-content.textContent=result;
+
 content.classList.add('content');
+content.textContent= result; 
 container.appendChild(content);
 } 
 
