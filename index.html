@@ -67,17 +67,16 @@ function gameRound(e){
 console.log(e.srcElement.innerHTML);
  while(playerScore< 5 && computerScore<5){    
 
-this.classList.add('pressed');
+//this.classList.add('pressed');
 
 const computer = computerPlay(); 
 
-const button = querySelector('e.srcElementinnerHTML'); 
-const player =button;
+const player = String('e.srcElement.innerHTML);
   console.log (player); 
   console.log (computer);
   let result= playRound(player, computer);
   console.log(result);
-this.classList.remove('pressed');
+//this.classList.remove('pressed');
 
  }	
 }
@@ -85,9 +84,8 @@ playerScore=0;
 computerScore =0;
 
 
-const buttons = document.querySelectorAll('.buttons');
+const buttons = document.querySelectorAll('.button');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
-
 
 </script>
 </body>	
