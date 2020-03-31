@@ -25,26 +25,32 @@ function computerPlay(){
 function playRound(player, computer) {
   
  	if (player === "rock" && computer === "paper"){
+	return	computerScore +=1;
  	    return "Paper beats rock, computer Wins";
  	}
  	
   else if (player === "rock" && computer === "scissors"){
+	return	playerScore +=1;
  	     return "rock beats scissor, player wins";
  	}
  	
   else if (player === "paper" && computer === "rock" ){
+	return playerScore +=1;
       return "paper beats rock, player wins";
     }
   
   else if (player === "paper"&& computer === "scissors"){
+	return computerScore +=1;
       return "scissors beats paper, computer wins";
     }
   
   else if (player === "scissors" && computer === "paper" ){
+	return playerScore +=1;
       return "scissors beats paper, player wins"; 
     } 
   
   else if (player === "scissors" && computer === "rock"){
+	return computerScore +=1;
       return "rock beats scissors, computer wins"; 
     } 
 
@@ -55,8 +61,9 @@ function playRound(player, computer) {
 }
 
 
+
 function gameRound(e){
-    
+ while(playerScore< 5 && computerScore<5){    
 
 const button = document.querySelector('.button').textContent; 
 const computer = computerPlay(); 
@@ -65,8 +72,13 @@ let player = button;
   console.log (player); 
   console.log (computer);
   let result= playRound(player, computer);
-  console.log(result); 
+  console.log(result);
+
+
+ }	
 }
+playerScore=0;
+computerScore =0;
 
 const buttons = document.querySelectorAll('.buttons');
 buttons.forEach( button => button.addEventListener ('click', gameRound));
