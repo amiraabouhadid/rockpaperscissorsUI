@@ -15,14 +15,14 @@ head{
 }
 .buttons {
 	display: block; 
-	margin: 0 auto;
+	margin: 500px 50px 200px 50px;
 	align-items: center;
  
 }
 
 .button{
 	display: block;
-	width: 100%;
+	width: 700px;
 	font-size: 40px; 
 	border: 5px solid black; 
 	margin: 10px 40px 10px 40px; 
@@ -31,4 +31,19 @@ head{
 	background-color: red; 
 	color: white;
 }
-
+.container {
+	display: block;
+	margin: 10px 50px 200px 50px;
+	align-items: center;  
+}
+.content{
+	display: block;	
+	width: 700px;
+	font-size: 40px;
+	border: 5px solid yellow;
+	margin: 10px 40px 10px 40px;
+	padding: 20px 20px 20px 20px;
+	text-align: center:
+	background-color: black; 
+	color: white; 
+}
