@@ -80,15 +80,10 @@ const player = String(e.srcElement.innerHTML);
   let result= playRound(player, computer); 
  console.log(result);
 //this.classList.remove('pressed');
-gameOver();
+if (playerScore === "5" || computerScore === "5"){
+	return location.reload();}
 }
 
-function gameOver(e){
-if (playerScore === 5 || computerScore === 5){
-	return console.log("Game Over"); 
-}
-location.reload();
-}
 
 let playerScore=0;
 let computerScore =0;
