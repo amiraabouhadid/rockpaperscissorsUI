@@ -3,29 +3,30 @@ html{
 	background-size: cover;
 }
 
-body, html{
+body{
 	margin:20px 40px 20px 40px; 
 	padding: 0; 
 }
 
-head, html {
+head{
 	color: red; 
 	margin: 10px 10px 10px 10px; 
 	padding: 10px 10px 10px 10px;
 }
 .buttons {
-	display: flex; 
-	flex: 1; 
-	align-items: center; 
-	justify-content: center; 
-	margin: 20px 20px 20px 20px;
+	display: block; 
+	margin: 0 auto;
+	align-items: center;
+ 
 }
 
 .button{
+	display: block;
+	width: 100%;
 	font-size: 40px; 
 	border: 5px solid black; 
 	margin: 10px 40px 10px 40px; 
-	padding: 2px 2px 2px 2px;
+	padding: 20px 20px 20px 20px;
 	text-align: center; 
 	background-color: red; 
 	color: white;
