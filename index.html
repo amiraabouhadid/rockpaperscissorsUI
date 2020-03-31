@@ -85,8 +85,9 @@ const player = String(e.srcElement.innerHTML);
 
 function gameOver(e){
 if (playerScore === 5 || computerScore === 5){
-	return "Game Over"; 
+	return console.log("Game Over"); 
 }
+location.reload();
 }
 
 let playerScore=0;
