@@ -1,5 +1,5 @@
 
-# JAVASCRIPT PROJECT: ROCK PAPER SCISSORS USER INTERFACE
+# ROCK PAPER SCISSORS USER INTERFACE
 
 A user interface game of the renowned rock paper scissors game! Play against a bot and see who wins by reaching a score of five points first. A point for each round won. 
 ![Screenshot from 2021-05-07 03-35-35](https://user-images.githubusercontent.com/56790126/117385559-a7269700-aee5-11eb-9d82-12a02b205f37.png)
