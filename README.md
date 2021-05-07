@@ -2,6 +2,9 @@
 # JAVASCRIPT PROJECT: ROCK PAPER SCISSORS USER INTERFACE
 
 A user interfacegame of the renowned rock papper scissors game! Play against a bot and see who wins. 
+![Screenshot from 2021-05-07 03-35-35](https://user-images.githubusercontent.com/56790126/117385559-a7269700-aee5-11eb-9d82-12a02b205f37.png)
+![Screenshot from 2021-05-07 03-36-08](https://user-images.githubusercontent.com/56790126/117385563-a857c400-aee5-11eb-92ac-f8fee0310339.png)
+
 
 ### Live Demo
 
